@@ -14,6 +14,12 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px 15px 40px;
+}
+
 /* Общий контейнер для всего сайта */
 .app-wrapper {
   width: 100%;

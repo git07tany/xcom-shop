@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  height: 360px;
+  margin-top: 50px;
+}
+
+.container4 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 15px 40px;
+}
+
+.container4 input {
+  padding-left: 20px;
+}
+
+.main-footer {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+}
+
+.kn {
+    margin-top: 10px;
+}
+
+/* Серая полоса — без отступов */
+.divider,
+.footer-bottom-divider {
+  width: 100%;
+  margin-top: 15px;
+  height: 1px;
+  background-color: #006CBA;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .subscribe-section {
+    flex-direction: column;
+    gap: 12px;
+    height: auto;
+  }
+
+  .main-footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
