@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 
 import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
+import NotebooksPage from './pages/NotebooksPage';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<HomePage />} /> 
+            <Route path="/catalog/notebooks" element={<NotebooksPage />} />
             <Route path="/catalog" element={<CatalogPage />} />
           </Routes>
         </main>

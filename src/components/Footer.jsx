@@ -64,7 +64,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-[17px]">Контакты</h4>
             <ul className="text-light text-[15px]">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center  ">
                 <li><Link to="#" className="hover:underline">Москва</Link></li>
                 <ChevronDown size={14} color="white" />
               </div>

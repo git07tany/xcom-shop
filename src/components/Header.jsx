@@ -31,10 +31,10 @@ const Header = () => {
           </div>
 
           <div className="cata">
-            <button className="catalog-button h-[39px] bg-[#0061A7] text-white rounded-full text-[15px] font-light flex gap-2">
+            <Link to="/catalog" className="catalog-button h-[39px] bg-[#0061A7] text-white rounded-full text-[15px] font-light flex gap-2">
               Каталог
               <ChevronDown size={16} color="white" />
-            </button>
+            </Link>
           </div>
 
           <div className="header-search flex-grow max-w-[493px] relative">
@@ -48,7 +48,7 @@ const Header = () => {
 
           <div className="header-icons flex items-center gap-20">
             <Link to="#" className="icon-link">
-              <Heart size={40} color="#0061A7"  />
+              <Heart size={40} color="#0061A7" />
             </Link>
             <Link to="#" className="icon-link">
               <ShoppingCart size={40} color="#0061A7" />
