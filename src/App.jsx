@@ -7,6 +7,12 @@ import CatalogPage from './pages/CatalogPage';
 import NotebooksPage from './pages/NotebooksPage';
 import SmartphonesPage from './pages/SmartphonesPage';
 import MonitorsPage from './pages/MonitorsPage';
+import VideocardPage from './pages/VideocardPage';
+import ProcessorsPage from './pages/ProcessorsPage';
+import News4 from './pages/News4';
+import News3 from './pages/News3';
+import News2 from './pages/News2';
+import News1 from './pages/News1';
 
 const App = () => {
   return (
@@ -20,6 +26,12 @@ const App = () => {
             <Route path="/catalog" element={<CatalogPage />} />
             <Route path="/catalog/smartphones" element={<SmartphonesPage />} />
             <Route path="/catalog/monitors" element={<MonitorsPage />} />
+            <Route path='/catalog/video-cards' element={<VideocardPage />} />
+            <Route path='/catalog/processors' element={<ProcessorsPage />} />
+            <Route path='/news/1' element={<News1 />} />
+            <Route path='/news/2' element={<News2 />} />
+            <Route path='/news/3' element={<News3 />} />
+            <Route path='/news/4' element={<News4 />} />
           </Routes>
         </main>
         <Footer/>

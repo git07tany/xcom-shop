@@ -1,76 +1,76 @@
 import { Link } from 'react-router-dom';
-import './Monitors.css';
+import './Videocard.css';
 
 // Данные продуктов
 const products = [
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Видеокарта ASUS GeForce RTX 3050 DUAL OC (DUAL-RTX3050-O8G-V2)",
+    specs: "nVidia GeForce RTX 3050, 1552 МГц (1852 МГц, в режиме Boost), 8 нм, GDDR6, 14000 МГц, 128 бит",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
@@ -140,22 +140,22 @@ const ProductCard = ({ product }) => {
 };
 
 // Основной компонент страницы
-const MonitorsPage = () => {
+const VideocardPage = () => {
   return (
-    <div className="monitors-page">
+    <div className="smartphones-page">
       <div className="container6">
         <div className="breadcrumbs text-gray-500 text-sm mb-4">
-          Компьютеры и ПО - Мониторы
+          Компьютерные комплектующие - Видеокарты
         </div>
 
         {/* Заголовок */}
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">Мониторы (9 товаров)</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">Видеокарты (9 товаров)</h1>
 
         {/* Фильтры */}
         <div className="filters flex flex-wrap gap-2 mb-4">
           {[
-            'Игровые', 'Изогнутые', 'Белые', 'С регулировкой по высоте',
-            'Для офиса', 'Для видеомонтажа', 'Матовые', 'Черные', 'Веб-камера', 'Серые', '144 Гц'
+            'GeForse GT', 'GeForse GTX', 'GeForse RTX', 'Игровые',
+            'RTX 3050', 'RTX 3060', 'RTX 5050', 'RTX 5060 Ti', 'RTX 5070 Ti', 'RTX 5080', 'RTX 5090'
           ].map((filter, idx) => (
             <button
               key={idx}
@@ -187,4 +187,4 @@ const MonitorsPage = () => {
   );
 };
 
-export default MonitorsPage;
+export default VideocardPage;

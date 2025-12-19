@@ -1,76 +1,76 @@
 import { Link } from 'react-router-dom';
-import './Monitors.css';
+import './Processors.css';
 
 // Данные продуктов
 const products = [
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
   },
   {
     id: 1,
-    name: "Монитор Xiaomi G27Qi черный",
-    specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
+    name: "Процессор AMD Ryzen 7 7800X3D",
+    specs: "Raphael AM5, 8, 16 потоков, AM5, 4.2 ГГци 5 ГГц в режиме Turbo, 5 нм",
     reviews: 5,
     delivery: "Самовывоз сегодня",
     availability: "Доставка завтра"
@@ -140,22 +140,22 @@ const ProductCard = ({ product }) => {
 };
 
 // Основной компонент страницы
-const MonitorsPage = () => {
+const ProcessorsPage = () => {
   return (
-    <div className="monitors-page">
+    <div className="processors-page">
       <div className="container6">
         <div className="breadcrumbs text-gray-500 text-sm mb-4">
-          Компьютеры и ПО - Мониторы
+          Компьютерные комплектующие - Процессоры
         </div>
 
         {/* Заголовок */}
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">Мониторы (9 товаров)</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">Процессоры (9 товаров)</h1>
 
         {/* Фильтры */}
         <div className="filters flex flex-wrap gap-2 mb-4">
           {[
-            'Игровые', 'Изогнутые', 'Белые', 'С регулировкой по высоте',
-            'Для офиса', 'Для видеомонтажа', 'Матовые', 'Черные', 'Веб-камера', 'Серые', '144 Гц'
+            'amd ryzen 7', 'intel core i5', 'intel core i7', 'intel core i9',
+            '12 ядер', '16 ядер', '4 ядер', '8 ядер', '10 ядер'
           ].map((filter, idx) => (
             <button
               key={idx}
@@ -187,4 +187,4 @@ const MonitorsPage = () => {
   );
 };
 
-export default MonitorsPage;
+export default ProcessorsPage;
