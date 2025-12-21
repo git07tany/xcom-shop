@@ -11,7 +11,7 @@ const News2 = () => {
 
       <div className="mb-10">
         <img
-          src="./src/assets/nlo.jpg" // ← замени на изображение (например, НЛО над складом)
+          src="https://avatars.mds.yandex.net/i?id=3e8b14e14d4f1200b68fabfa2c5e9d06_l-9146954-images-thumbs&n=13"
           alt="Инопланетный аудит XCOM-SHOP"
           className="mx-auto max-w-full h-auto rounded-lg shadow-md"
         />

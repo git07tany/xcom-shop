@@ -8,10 +8,9 @@ const News1 = () => {
       </h1>
 
       <div className="mb-10">
-        <img
-          src="/images/computer-world.jpg" // ← замени на изображение (например, уютный ПК с кофе рядом)
+        <img src="https://img.freepik.com/free-photo/3d-graph-computer-illustration_23-2151884860.jpg"
           alt="Мир компьютеров от XCOM-SHOP"
-          className="mx-auto max韺w-full h-auto rounded-lg shadow-md"
+          className="mx-auto maxw-full h-auto rounded-lg shadow-md"
         />
       </div>
 

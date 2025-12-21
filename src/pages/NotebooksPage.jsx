@@ -12,7 +12,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 2,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -20,7 +20,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 3,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -28,7 +28,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 4,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -36,7 +36,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 5,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -44,7 +44,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 6,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -52,7 +52,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 7,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -60,7 +60,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 8,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -68,7 +68,7 @@ const products = [
     availability: "Доставка завтра"
   },
   {
-    id: 1,
+    id: 9,
     name: "Ноутбук Digma EVE C4800",
     specs: "Windows 11 Профессиональная, 2 , Intel, 14\", UHD Graphics 600, 256 Гб, 8 Гб, Celeron, Full HD (1920 x 1080) / N4020 / 1.1 ГГц",
     reviews: 5,
@@ -83,7 +83,7 @@ const ProductCard = ({ product }) => {
     <div className="product-card bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
       {/* Изображение */}
       <img
-        src="https://via.placeholder.com/200x150?text=Ноутбук"
+        src="https://i.pinimg.com/originals/49/7b/97/497b97264121a74b035736cf23158e4f.png"
         alt={product.name}
         className="w-full h-32 object-contain mb-3"
       />

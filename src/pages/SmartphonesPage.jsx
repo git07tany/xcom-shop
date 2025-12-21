@@ -83,7 +83,7 @@ const ProductCard = ({ product }) => {
     <div className="product-card bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
       {/* Изображение */}
       <img
-        src="https://via.placeholder.com/200x150?text=Ноутбук"
+        src="https://avatars.mds.yandex.net/get-mpic/12621455/2a00000199bf6edb967978a2cac5edbb58c7/orig"
         alt={product.name}
         className="w-full h-32 object-contain mb-3"
       />

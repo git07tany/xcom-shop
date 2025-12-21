@@ -3,21 +3,19 @@ import React from 'react';
 const News4 = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 text-center font-sans">
-      {/* Заголовок */}
+      
       <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
         А вы знали, что работать у нас +вайб и никаких выгораний?
       </h1>
 
-      {/* Изображение (место под него) */}
       <div className="mb-10">
         <img
-          src="..." // надо написать путь к картинкам
+          src="https://sun9-9.userapi.com/impf/r-rBwOT40aF7Vu37HcMqZnxew2osuYHl-RweBA/ddW0KET5yO4.jpg?size=1818x606&quality=95&crop=0,0,1590,530&sign=715b06345e8b83a2d793466094768f9a&type=cover_group"
           alt="Команда XCOM-SHOP"
           className="mx-auto max-w-full h-auto rounded-lg shadow-md"
         />
       </div>
 
-      {/* Текст новости */}
       <p className="text-gray-700 text-lg leading-relaxed mb-5">
         Команда <strong className="font-semibold">XCOM-SHOP</strong> с гордостью объявляет — мы открываем двери для новых коллег!
       </p>
@@ -52,10 +50,10 @@ const News4 = () => {
       <p className="text-gray-600 text-base mt-6">
         Подробнее о вакансиях — на нашем сайте или по почте{' '}
         <a
-          href="mailto:hr@xcom-shop.ru"
+          href="mailto:rar@xcom.ru"
           className="text-blue-600 hover:text-blue-800 underline"
         >
-          hr@xcom-shop.ru
+          rar@xcom.ru
         </a>
         .
       </p>

@@ -9,7 +9,7 @@ const News3 = () => {
 
       <div className="mb-10">
         <img
-          src="/images/smart-flower.jpg" // ← замени на реальный путь
+          src="https://pl2t.com/uploads/videonabludenie-kvartira_768.jpg"
           alt="Умный цветок XCOM-SHOP"
           className="mx-auto max-w-full h-auto rounded-lg shadow-md"
         />
