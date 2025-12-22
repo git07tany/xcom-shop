@@ -15,6 +15,7 @@ import News4 from './pages/News4';
 import News3 from './pages/News3';
 import News2 from './pages/News2';
 import News1 from './pages/News1';
+import WarrantyPage from './pages/WarrantyPage';
 
 
 const App = () => {
@@ -26,7 +27,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path='/payment' element={<PaymentPage />} /> 
+            <Route path='/payment' element={<PaymentPage />} />
+            <Route path='/warranty' element={<WarrantyPage />} /> 
             <Route path="/catalog/notebooks" element={<NotebooksPage />} />
             <Route path="/catalog" element={<CatalogPage />} />
             <Route path="/catalog/smartphones" element={<SmartphonesPage />} />
