@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import PaymentPage from './pages/PaymentPage';
 import CatalogPage from './pages/CatalogPage';
 import NotebooksPage from './pages/NotebooksPage';
 import SmartphonesPage from './pages/SmartphonesPage';
@@ -14,6 +16,7 @@ import News3 from './pages/News3';
 import News2 from './pages/News2';
 import News1 from './pages/News1';
 
+
 const App = () => {
   return (
     <Router>
@@ -21,7 +24,9 @@ const App = () => {
         <Header />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<HomePage />} /> 
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path='/payment' element={<PaymentPage />} /> 
             <Route path="/catalog/notebooks" element={<NotebooksPage />} />
             <Route path="/catalog" element={<CatalogPage />} />
             <Route path="/catalog/smartphones" element={<SmartphonesPage />} />

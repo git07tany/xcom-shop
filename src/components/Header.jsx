@@ -63,15 +63,15 @@ const Header = () => {
       {/* Нижнее меню */}
       <div className="container2">
         <nav className="header-nav bg-[#EAF5FF] h-[40px] flex items-center justify-between">
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">О нас</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Контакты</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Оплата</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Гарантия</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Доставка</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Услуги</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Корпоративным клиентам</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Лизинг</Link>
-          <Link to="#" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Поставщикам</Link>
+          <Link to="/about" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">О нас</Link>
+          <Link to="/contacts" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Контакты</Link>
+          <Link to="/payment" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Оплата</Link>
+          <Link to="/warranty" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Гарантия</Link>
+          <Link to="/delivery" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Доставка</Link>
+          <Link to="/services" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Услуги</Link>
+          <Link to="/corporate" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Корпоративным клиентам</Link>
+          <Link to="/leasing" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Лизинг</Link>
+          <Link to="/suppliers" className="nav-link text-[15px] font-medium text-gray-700 hover:text-[#0061A7]">Поставщикам</Link>
         </nav>
       </div>
     </header>
