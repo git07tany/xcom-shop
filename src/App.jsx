@@ -6,6 +6,10 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PaymentPage from './pages/PaymentPage';
 import CatalogPage from './pages/CatalogPage';
+import WarrantyPage from './pages/WarrantyPage';
+import ContactsPage from './pages/ContactsPage';
+import DeliveryPage from './pages/DeliveryPage';
+import ServicesPage from './pages/ServicesPage';
 import NotebooksPage from './pages/NotebooksPage';
 import SmartphonesPage from './pages/SmartphonesPage';
 import MonitorsPage from './pages/MonitorsPage';
@@ -15,7 +19,7 @@ import News4 from './pages/News4';
 import News3 from './pages/News3';
 import News2 from './pages/News2';
 import News1 from './pages/News1';
-import WarrantyPage from './pages/WarrantyPage';
+
 
 
 const App = () => {
@@ -29,6 +33,9 @@ const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path='/payment' element={<PaymentPage />} />
             <Route path='/warranty' element={<WarrantyPage />} /> 
+            <Route path='/contacts' element={<ContactsPage />} />
+            <Route path='/delivery' element={<DeliveryPage />} />
+            <Route path='/services' element={<ServicesPage />} />
             <Route path="/catalog/notebooks" element={<NotebooksPage />} />
             <Route path="/catalog" element={<CatalogPage />} />
             <Route path="/catalog/smartphones" element={<SmartphonesPage />} />
