@@ -1,4 +1,3 @@
-// src/pages/CatalogPage.jsx
 import { Link } from 'react-router-dom';
 import './Catalog.css';
 
@@ -11,8 +10,8 @@ const CatalogPage = () => {
         <div className="catalog-sidebar">
           <nav>
             <ul>
-              <li><Link to="#" className="sidebar-link active">Компьютеры и ноутбуки</Link></li>
-              <li><Link to="#" className="sidebar-link">Компьютерные комплектующие</Link></li>
+              <li><Link to="/catalog" className="sidebar-link active">Компьютеры и ноутбуки</Link></li>
+              <li><Link to="/complect" className="sidebar-link">Компьютерные комплектующие</Link></li>
               <li><Link to="#" className="sidebar-link">Серверы и СХД</Link></li>
               <li><Link to="#" className="sidebar-link">Периферия</Link></li>
               <li><Link to="#" className="sidebar-link">ИБП</Link></li>

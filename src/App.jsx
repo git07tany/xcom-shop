@@ -19,7 +19,11 @@ import News4 from './pages/News4';
 import News3 from './pages/News3';
 import News2 from './pages/News2';
 import News1 from './pages/News1';
-
+import CartPage from './pages/CartPage';
+import ProductPage from './pages/ProductPage';
+import LikePage from './pages/LikePage';
+import ComplectPage from './pages/ComplectPage';
+import ComplectPage2 from './pages/ComplectPage2';
 
 
 const App = () => {
@@ -46,6 +50,12 @@ const App = () => {
             <Route path='/news/2' element={<News2 />} />
             <Route path='/news/3' element={<News3 />} />
             <Route path='/news/4' element={<News4 />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/product/:id" element={<ProductPage />} />
+            <Route path="/like" element={<LikePage />} />
+            <Route path="/complect" element={<ComplectPage />} />
+            <Route path="/complect2" element={<ComplectPage2 />} />
+          
           </Routes>
         </main>
         <Footer/>

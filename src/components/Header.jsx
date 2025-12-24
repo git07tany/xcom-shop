@@ -47,10 +47,10 @@ const Header = () => {
           </div>
 
           <div className="header-icons flex items-center gap-20">
-            <Link to="#" className="icon-link">
+            <Link to="/like" className="icon-link">
               <Heart size={40} color="#0061A7" />
             </Link>
-            <Link to="#" className="icon-link">
+            <Link to="/cart" className="icon-link">
               <ShoppingCart size={40} color="#0061A7" />
             </Link>
             <Link to="#" className="icon-link">

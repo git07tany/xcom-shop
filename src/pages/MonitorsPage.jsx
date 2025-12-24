@@ -1,79 +1,90 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Monitors.css';
+import { useCart } from '../context/CartContext';
 
 // Данные продуктов
 const products = [
   {
-    id: 1,
+    id: 10,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 11,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 12,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 13,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 14,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 15,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 16,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 17,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
   {
-    id: 1,
+    id: 18,
     name: "Монитор Xiaomi G27Qi черный",
+    price: 18990,
     specs: "27', 2560x1440 180 Гц, IPS, DisplayPort 1.4 x2, HDMI 2.0 x2, выход на наушники",
     reviews: 5,
-    delivery: "Самовывоз сегодня",
-    availability: "Доставка завтра"
+    delivery: "Самовывоз: сегодня",
+    availability: "Доставка: завтра"
   },
 ];
 
@@ -114,7 +125,7 @@ const ProductCard = ({ product }) => {
             fill="#0061A7"
             viewBox="0 0 16 16"
           >
-            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2A2 2 0 0 0 0 14.586V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .707.5L8 13.5a.5.5 0 0 0 .5-.5V2a2 2 0 0 0-2-2H2z"/>
+            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2A2 2 0 0 0 0 14.586V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .707.5L8 13.5a.5.5 0 0 0 .5-.5V2a2 2 0 0 0-2-2H2z" />
           </svg>
         </button>
       </div>
@@ -130,7 +141,6 @@ const ProductCard = ({ product }) => {
         <span>{product.delivery}</span>
         <span>{product.availability}</span>
       </div>
-
       {/* Кнопка */}
       <button className="w-full py-2 bg-[#0061A7] text-white rounded-lg text-sm font-medium hover:bg-[#004a80]">
         Добавить в корзину
@@ -168,10 +178,10 @@ const MonitorsPage = () => {
 
         {/* Сортировка */}
         <div className="sorting text-sm mb-6">
-          Сортировать по: 
-          <strong className="text-[#0061A7]"> Популярности</strong> | 
-          <span className="hover:text-[#0061A7] cursor-pointer"> Цене</span> | 
-          <span className="hover:text-[#0061A7] cursor-pointer"> Названию</span> | 
+          Сортировать по:
+          <strong className="text-[#0061A7]"> Популярности</strong> |
+          <span className="hover:text-[#0061A7] cursor-pointer"> Цене</span> |
+          <span className="hover:text-[#0061A7] cursor-pointer"> Названию</span> |
           <span className="hover:text-[#0061A7] cursor-pointer"> Доступности</span>
         </div>
 
