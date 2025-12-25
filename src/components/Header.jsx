@@ -73,7 +73,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Поиск — отдельно, ниже */}
+      {/* Поиск ниже */}
       <div className="mobile-search">
         <div className="head-search">
           <div className="search-wrapp">
