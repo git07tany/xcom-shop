@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Clock, Phone, Search, Heart, ShoppingCart, CircleUserRound, ChevronDown } from 'lucide-react';
+import { MapPin, Clock, Phone, Search, Heart, ShoppingCart, CircleUserRound, ChevronDown, Menu } from 'lucide-react';
 import './Header.css'
 
 const Header = () => {
@@ -24,14 +24,28 @@ const Header = () => {
       {/* Основная шапка */}
       <div className="container">
         <div className="header-main flex items-center h-[77px] py-4">
+
+          {/* Бургер-меню */}
+          <button className="mobile-menu-button w-[23px] flex items-center justify-center">
+            <Link to="/catalog" className="icon-link">
+              <Menu size={24} />
+            </Link>
+          </button>
+
+          {/* Логотип — по центру */}
           <div className="header-logo">
             <Link to="/">
               <img src="src/assets/shop.svg" alt="xcom shop" className="h-[77px]" />
             </Link>
           </div>
 
+          {/* Иконка местоположения — справа */}
+          <div className="location-icon">
+            <MapPin size={24} color="#0061A7" />
+          </div>
+
           <div className="cata">
-            <Link to="/catalog" className="catalog-button h-[39px] bg-[#0061A7] text-white rounded-full text-[15px] font-light flex gap-2">
+            <Link to="/" className="catalog-button h-[39px] bg-[#0061A7] text-white rounded-full text-[15px] font-light flex gap-2">
               Каталог
               <ChevronDown size={16} color="white" />
             </Link>
@@ -41,8 +55,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Поиск по каталогу"
-              className="w-full h-[40px] border border-gray-300 rounded-full text-[15px] focus:outline-none focus:border-blue-500"
-            />
+              className="w-full h-[40px] border border-gray-300 rounded-full text-[15px] focus:outline-none focus:border-blue-500" />
             <Search size={20} color="#9ca3af" className="absolute right-4 top-1/2 transform -translate-y-1/2" />
           </div>
 
@@ -60,6 +73,17 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Поиск — отдельно, ниже */}
+      <div className="mobile-search">
+        <div className="head-search">
+          <div className="search-wrapp">
+            <input type="text" placeholder="Поиск по каталогу" className="search-inp border border-gray-300 rounded-full focus:outline-none focus:border-blue-500" />
+            <Search size={20} color="#9ca3af" className="search-ic" />
+          </div>
+        </div>
+      </div>
+
+      
       {/* Нижнее меню */}
       <div className="container2">
         <nav className="header-nav bg-[#EAF5FF] h-[40px] flex items-center justify-between">

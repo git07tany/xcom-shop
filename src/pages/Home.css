@@ -18,17 +18,109 @@
 }
 
 @media (max-width: 1023px) {
-  .container {
+  .container3 {
     padding: 0 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .home-section {
-    text-align: center;
-  }
   .view-all-link {
-    margin-top: 12px;
-    display: inline-block;
+    display: none;
+  }
+
+  /* Популярное скролл */
+  .category-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 18px;
+    scrollbar-width: none;
+    margin-top: 0px;
+  }
+  .category-grid .constructor-card {
+    flex: 0 0 auto;
+    width: 247px;
+  }
+
+  /* Конструктор скролл */
+  .constructor-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 18px;
+    scrollbar-width: none;
+  }
+
+  .constructor-grid .constructor-card {
+    flex: 0 0 auto;
+    width: 326px;
+  }
+  
+  /* Новости скролл */
+  .news-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 34px;
+    padding-bottom: 12px;
+    scrollbar-width: none;
+  }
+  .news-grid .news-card {
+    flex: 0 0 auto;
+    width: 260px;
+  }
+
+  .section-title {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-weight: 700;
+  }
+}
+
+/* Адаптация текста */
+.constructor-desc,
+.news-title {
+  font-size: 16px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+/* Отступы */
+.home-section {
+  margin: 0;
+}
+
+/* Убираем отступ внизу у последней секции */
+.home-section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Медиа-запросы */
+@media (min-width: 769px) {
+  /* На планшетах и десктопах — оставляем сетку */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+  .constructor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    overflow-x: visible;
+    padding-bottom: 0;
   }
 }

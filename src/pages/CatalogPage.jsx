@@ -4,7 +4,7 @@ import './Catalog.css';
 const CatalogPage = () => {
   return (
     <div className="catalog-page">
-      <div className="container5">
+      <div className="container5"> 
 
         {/* Левое меню */}
         <div className="catalog-sidebar">

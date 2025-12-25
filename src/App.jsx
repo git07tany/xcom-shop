@@ -24,6 +24,7 @@ import ProductPage from './pages/ProductPage';
 import LikePage from './pages/LikePage';
 import ComplectPage from './pages/ComplectPage';
 import ComplectPage2 from './pages/ComplectPage2';
+import MobileNav from './components/MobileNav';
 
 
 const App = () => {
@@ -59,6 +60,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer/>
+        <MobileNav />
       </div>
     </Router>
   );
