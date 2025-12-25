@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import './Home.css';
 
 const HomePage = () => {
-  return (
+  return ( 
     <div className="home">
       <div className="container3">
 

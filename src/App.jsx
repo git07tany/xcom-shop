@@ -24,6 +24,7 @@ import ProductPage from './pages/ProductPage';
 import LikePage from './pages/LikePage';
 import ComplectPage from './pages/ComplectPage';
 import ComplectPage2 from './pages/ComplectPage2';
+import MobileNav from './components/MobileNav';
 import CorporatePage from './pages/CorporatePage';
 import LeasingPage from './pages/LeasingPage';
 import SuppliersPage from './pages/SuppliersPage';
@@ -65,6 +66,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer/>
+        <MobileNav />
       </div>
     </Router>
   );

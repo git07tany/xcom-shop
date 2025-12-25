@@ -15,7 +15,7 @@ const CorporatePage = () => {
       {/* Длинная картинка по центру */}
       <div className="mb-16">
         <img
-          src="https://yaart-web-alice-images.s3.yandex.net/abfcac51e1c511f0aa9592f4cc84d051:1"
+          src="https://yaart-web-alice-images.s3.yandex.net/abfcac51e1c511f0aa9592f4cc84d051:1" 
           alt="Корпоративные клиенты"
           className="w-full h-auto rounded-xl shadow-lg"
         />
