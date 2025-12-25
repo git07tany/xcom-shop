@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesPage = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 font-sans">
+    <div className="max-w-6xl mx-auto px-4 font-sans">
       {/* Заголовок */}
       <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">🛠️ Наши услуги — для бизнеса и дома</h1>
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
@@ -15,14 +15,14 @@ const ServicesPage = () => {
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 overflow-hidden group">
           <div className="bg-blue-50 p-6 flex justify-center">
             <img
-              src="/images/network-cabinet.png" // ← замени на реальное фото
+              src="https://yaart-web-alice-images.s3.yandex.net/3d98f476e1c311f09774161a2f06c182:1"
               alt="Сетевой шкаф"
-              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform rounded-full"
             />
           </div>
           <div className="p-6">
             <h2 className="text-xl font-bold text-gray-900 mb-3">Сетевой отдел</h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-7">
               Сетевые решения X-Com — проектирование, монтаж и настройка электросетей, связи и систем безопасности.
             </p>
             <button className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
@@ -35,14 +35,14 @@ const ServicesPage = () => {
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 overflow-hidden group">
           <div className="bg-indigo-50 p-6 flex justify-center">
             <img
-              src="/images/project-laptop.png" // ← замени на реальное фото
+              src="https://yaart-web-alice-images.s3.yandex.net/7c03b75de1c311f0932fea6bc7508477:1"
               alt="Проектный отдел"
-              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform rounded-full"
             />
           </div>
           <div className="p-6">
             <h2 className="text-xl font-bold text-gray-900 mb-3">Проектный отдел</h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-13">
               Проектные решения X-Com — поставка, проектирование и финансирование IT-оборудования.
             </p>
             <button className="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
@@ -55,9 +55,9 @@ const ServicesPage = () => {
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 overflow-hidden group">
           <div className="bg-green-50 p-6 flex justify-center">
             <img
-              src="/images/pc-install.png" // ← замени на реальное фото
+              src="https://yaart-web-alice-images.s3.yandex.net/c595f2bce1c311f0a7d0268986333344:1"
               alt="Установка ПО"
-              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform rounded-full"
             />
           </div>
           <div className="p-6">
@@ -75,9 +75,8 @@ const ServicesPage = () => {
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 overflow-hidden group">
           <div className="bg-yellow-50 p-6 flex justify-center">
             <img
-              src="/images/tech-support.png" // ← замени на реальное фото
-              alt="Техподдержка"
-              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform"
+              src="https://yaart-web-alice-images.s3.yandex.net/17082b46e1c411f0a62a4affe89777e2:1"
+              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform rounded-full"
             />
           </div>
           <div className="p-6">
@@ -95,14 +94,14 @@ const ServicesPage = () => {
         <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 overflow-hidden group">
           <div className="bg-purple-50 p-6 flex justify-center">
             <img
-              src="/images/split-system.png" // ← замени на реальное фото
+              src="https://yaart-web-alice-images.s3.yandex.net/72a362a0e1c411f0a12ba21322697f6f:1"
               alt="Сплит-система"
-              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-32 w-auto object-contain group-hover:scale-105 transition-transform rounded-full"
             />
           </div>
           <div className="p-6">
             <h2 className="text-xl font-bold text-gray-900 mb-3">Установка сплит-систем</h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-13">
               Монтаж кондиционеров X-Com — профессиональная установка сплит-систем с гарантией качества.
             </p>
             <button className="w-full bg-purple-600 text-white py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors">
@@ -126,7 +125,7 @@ const ServicesPage = () => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/images/team-service.jpg" // ← замени на фото команды или логотип
+              src="https://www.xcom-shop.ru/local/templates/shop2022/images/pages/about/img-foot-max.svg"
               alt="Команда XCOM-SHOP"
               className="max-w-full h-auto rounded-lg shadow-md"
             />

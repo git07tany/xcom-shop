@@ -2,7 +2,7 @@ import React from 'react';
 
 const LeasingPage = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 font-sans">
+    <div className="max-w-6xl mx-auto px-4 font-sans">
       {/* Заголовок */}
       <div className="text-center mb-16">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -46,7 +46,6 @@ const LeasingPage = () => {
             { value: "6 – 36 мес.", label: "срок лизинга" },
             { value: "От 3 часов", label: "одобрение заявки" },
             { value: "От 10%", label: "ставка" },
-            { value: "2 документа", label: "для одобрения" }
           ].map((item, idx) => (
             <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center group">
               <div className="text-2xl lg:text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700 transition-colors">
@@ -61,7 +60,6 @@ const LeasingPage = () => {
       {/* Кнопка — по центру */}
       <div className="text-center">
         <a
-          href="/leasing-request" // ← замени на нужную ссылку
           className="inline-block px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
         >
           📝 Заказать лизинг

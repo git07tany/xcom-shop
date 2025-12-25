@@ -1,8 +1,9 @@
 import React from 'react';
+import { FilePenLine, SquareMenu, Briefcase, Building, MonitorSmartphone  } from 'lucide-react';
 
 const CorporatePage = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 font-sans">
+    <div className="max-w-6xl mx-auto px-4 font-sans">
       {/* Заголовок */}
       <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
         🏢 Почему корпоративные клиенты выбирают XCOM-SHOP?
@@ -14,7 +15,7 @@ const CorporatePage = () => {
       {/* Длинная картинка по центру */}
       <div className="mb-16">
         <img
-          src="/images/corporate-banner.jpg" // ← замени на реальное изображение
+          src="https://yaart-web-alice-images.s3.yandex.net/abfcac51e1c511f0aa9592f4cc84d051:1"
           alt="Корпоративные клиенты"
           className="w-full h-auto rounded-xl shadow-lg"
         />
@@ -26,9 +27,7 @@ const CorporatePage = () => {
         <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 group">
           <div className="flex justify-center mb-4">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H2M2 7v10h4m12-3a2 2 0 002-2V7a2 2 0 00-2-2h-2.343M11 19C6.5 19 3 15.5 3 11S6.5 3 11 3s8 3.5 8 8-3.5 8-8 8z" />
-              </svg>
+              <FilePenLine />
             </div>
           </div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">Защита сделок</h3>
@@ -41,9 +40,7 @@ const CorporatePage = () => {
         <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 group">
           <div className="flex justify-center mb-4">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-              </svg>
+              < SquareMenu />
             </div>
           </div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">Специальные условия</h3>
@@ -56,9 +53,7 @@ const CorporatePage = () => {
         <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 group">
           <div className="flex justify-center mb-4">
             <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center group-hover:bg-indigo-200 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9M5 11V9m2 2a2 2 0 100 4h12a2 2 0 100-4M5 9a2 2 0 012-2h6a2 2 0 012 2M5 9a2 2 0 012-2h6a2 2 0 012 2" />
-              </svg>
+              <Briefcase />
             </div>
           </div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">Проектное оборудование</h3>
@@ -71,9 +66,7 @@ const CorporatePage = () => {
         <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 group">
           <div className="flex justify-center mb-4">
             <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 14h.01M18 14h.01M15 11v-1m0 1h.01M12 11v-1m0 1h.01M9 11v-1m0 1h.01M7 21h14v-2a3 3 0 00-5.356-1.857M18 7.464A3 3 0 0015.356 6H12M9 12h.01M12 12h.01M15 12h.01M18 12h.01M18 18v-8M6 18v-8" />
-              </svg>
+              < Building />
             </div>
           </div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">Тендеры и лизинг</h3>
@@ -86,9 +79,7 @@ const CorporatePage = () => {
         <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 group">
           <div className="flex justify-center mb-4">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-yellow-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a6 6 0 1112 0 6 6 0 01-12 0z" />
-              </svg>
+              <MonitorSmartphone />
             </div>
           </div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">Поддержка и внедрение</h3>

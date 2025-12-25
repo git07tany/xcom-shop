@@ -8,7 +8,6 @@ const PaymentPage = () => {
     setOpenSection(openSection === id ? null : id);
   };
 
-  // Иконки (можно заменить на SVG, img или иконки из библиотеки)
   const renderIcon = (name) => {
     const iconClass = "h-12 w-12 text-blue-600 mx-auto mb-4";
     return (
@@ -30,18 +29,15 @@ const PaymentPage = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10 text-gray-800 font-sans">
+    <div className="max-w-4xl mx-auto px-4 py-1 text-gray-800 font-sans">
       {/* Заголовок */}
       <h1 className="text-3xl font-bold text-center mb-10">Оплата</h1>
 
       {/* Карта (заглушка под Google Maps) */}
       <div className="mb-12">
-        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-64 flex items-center justify-center text-gray-500">
-          Карта: пункты выдачи и склады XCOM-SHOP
+        <div className="flex items-center justify-center text-gray-500">
+          <img src="https://www.xcom-shop.ru/local/templates/shop2022/images/pages/delivery/banner-max.png" />
         </div>
-        <p className="text-center text-sm text-gray-600 mt-2">
-          Более 100 пунктов выдачи по России — выберите удобный при оформлении заказа
-        </p>
       </div>
 
       {/* 4 блока */}
@@ -61,13 +57,13 @@ const PaymentPage = () => {
         <div className="bg-white p-6 rounded-xl shadow-sm text-center">
           {renderIcon('online')}
           <h3 className="font-semibold text-lg mb-1">Онлайн оплата</h3>
-          <p className="text-sm text-gray-600">Visa, Mastercard, Мир, ЮMoney. Безопасно и мгновенно.</p>
+          <p className="text-sm text-gray-600">Банковской картой на сайте: Visa, Mastercard, Мир, ЮMoney. Зачисление в день оплаты.</p>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-sm text-center">
           {renderIcon('transfer')}
           <h3 className="font-semibold text-lg mb-1">Банковский перевод</h3>
-          <p className="text-sm text-gray-600">Для юридических лиц и ИП.</p>
+          <p className="text-sm text-gray-600">Банковские переводы привязываются к заказам по будням с 09:00 до 18:00.</p>
         </div>
       </div>
 
@@ -98,27 +94,15 @@ const PaymentPage = () => {
           <div className="mt-4 space-y-4">
             {/* Сюда вставляй свой текст */}
             <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Рассрочка и кредит</h4>
+              <h4 className="font-medium">Бонусы XCOM</h4>
               <p className="text-gray-600 mt-1">
                 [Твой текст: условия, сроки, банки-партнёры и т.д.]
               </p>
             </div>
             <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Бонусы и кэшбэк</h4>
+              <h4 className="font-medium">Рассрочка от ROWI и "Халва"</h4>
               <p className="text-gray-600 mt-1">
                 [Твой текст: как начисляются баллы, как использовать и т.п.]
-              </p>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Оплата для юридических лиц</h4>
-              <p className="text-gray-600 mt-1">
-                [Твой текст: НДС, счёт, договор, лизинг и пр.]
-              </p>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Безопасность платежей</h4>
-              <p className="text-gray-600 mt-1">
-                [Твой текст: шифрование, PCI DSS, защита данных]
               </p>
             </div>
           </div>
@@ -152,28 +136,46 @@ const PaymentPage = () => {
           <div className="mt-4 space-y-4">
             {/* Сюда вставляй свои вопросы */}
             <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Можно ли оплатить заказ частями?</h4>
-              <p className="text-gray-600 mt-1">
-                [Твой ответ: да/нет, через что, условия]
+              <h4 className="font-medium">Правила приёма оплаты банковской картой в офисе или курьером</h4>
+              <p className="text-gray-600 mt-3">
+                · Использование банковской карты возможно только её законным держателем (лицом, фамилия и имя которого указаны на карте, подпись которого изображена на соответствуюшей полосе.)</p>
+              <p className="text-gray-600 mt-3">
+                · Кассир имеет право потребовать от владельца документ, подтверждающий личность держателя карты, подписать чек или ввести ПИН-код (при вводе ПИН-кода документы не требуются).</p>
+              <p className="text-gray-600 mt-3">
+                · Подпись на чеке должна совпадать с подписью на карте. Если подпись на чеке явно отличается от подписи на карте, кассир вправе отказать в приёме банковской карты к оплате.
               </p>
             </div>
             <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Когда спишутся деньги с карты?</h4>
-              <p className="text-gray-600 mt-1">
-                [Твой ответ: сразу, после подтверждения и т.д.]
-              </p>
+              <h4 className="font-medium">Получение заказа, оплаченного безналичным способом</h4>
+              <p className="font-semibold mt-5">
+                ФИЗИЧЕСКИМ ЛИЦАМ:</p>
+                <p className="text-gray-600 mt-1">
+                В случае безналичной оплаты, сотрудники Интернет-магазина XCOM-SHOP могут потребовать предъявить документ, удостоверяющий личномть покупателя, а в случае его отсутствия - отказать в выдаче товара.</p>
+                <p className="font-semibold mt-5">
+                ЮРИДИЧЕСКИМ ЛИЦАМ И ИП, ЕСЛИ ЗАКАЗ ПОЛУЧАЕТ:</p>
+                <p className="text-gray-600 mt-1">
+                Представитель покупателя, он должен предъявить оригинал доверенности и паспорт. Доверенность должна быть скреплена подлинными подписям и заверена печатью Покупателя.</p>
+                <p className="text-gray-600 mt-1">
+                Генеральный директор, ему необходимо предоставить паспорт и печать организации.</p>
+                <p className="text-gray-600 mt-1">
+                Индивидуальный предприниматель лично, ему необходимо предъявить документ, удостоверяющий личность, и печать (письмо об отсутствии печати).</p>
+                <p className="text-gray-600 mt-7">
+                Получение заказа, оплаченного безналичным способом, будет возможно только после поступления денег на наш счёт.</p>
+                <p className="text-gray-600 mt-3">
+                При отсутствии вышеуказанных документов или их неверном оформлении в выдаче товара будет отказано.</p>
             </div>
             <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Что, если я передумаю после оплаты?</h4>
+              <h4 className="font-medium">Возврат денег при отмене заказа</h4>
+              <p className="text-gray-600 mt-3">
+                Если заказ был оплачен безналичным способом, деньги перечисляются обратно на счёт или кошелёк, с которого производилась оплата.</p>
+              <p className="font-semibold mt-5">
+                Для возврата необходимо:</p>
               <p className="text-gray-600 mt-1">
-                [Твой ответ: возврат, сроки, условия]
-              </p>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium">Принимаете ли вы оплату по QR-коду?</h4>
+                1. Заполнить заявление на возврат.</p>
               <p className="text-gray-600 mt-1">
-                [Твой ответ: да/нет, где доступно]
-              </p>
+                2. Предоставить паспорт.</p>
+              <p className="text-gray-600 mt-5">
+                При оплате заказа банковской картой в офисе — предоставить чек, слип (второй «чек», содержащий информацию о переводе средств) и карту, с которой производилась оплата.</p>
             </div>
           </div>
         )}
