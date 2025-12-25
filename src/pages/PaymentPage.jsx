@@ -96,13 +96,13 @@ const PaymentPage = () => {
             <div className="p-4 bg-gray-50 rounded-lg">
               <h4 className="font-medium">Бонусы XCOM</h4>
               <p className="text-gray-600 mt-1">
-                [Твой текст: условия, сроки, банки-партнёры и т.д.]
+                Обязательно дописать текст
               </p>
             </div>
             <div className="p-4 bg-gray-50 rounded-lg">
               <h4 className="font-medium">Рассрочка от ROWI и "Халва"</h4>
               <p className="text-gray-600 mt-1">
-                [Твой текст: как начисляются баллы, как использовать и т.п.]
+                Обязательно дописать текст
               </p>
             </div>
           </div>
