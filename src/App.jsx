@@ -25,6 +25,9 @@ import LikePage from './pages/LikePage';
 import ComplectPage from './pages/ComplectPage';
 import ComplectPage2 from './pages/ComplectPage2';
 import MobileNav from './components/MobileNav';
+import CorporatePage from './pages/CorporatePage';
+import LeasingPage from './pages/LeasingPage';
+import SuppliersPage from './pages/SuppliersPage';
 
 
 const App = () => {
@@ -41,6 +44,9 @@ const App = () => {
             <Route path='/contacts' element={<ContactsPage />} />
             <Route path='/delivery' element={<DeliveryPage />} />
             <Route path='/services' element={<ServicesPage />} />
+            <Route path='/corporate' element={<CorporatePage />} />
+            <Route path='/suppliers' element={<SuppliersPage />} />
+            <Route path='/leasing' element={<LeasingPage />} />
             <Route path="/catalog/notebooks" element={<NotebooksPage />} />
             <Route path="/catalog" element={<CatalogPage />} />
             <Route path="/catalog/smartphones" element={<SmartphonesPage />} />
