@@ -1,16 +1,82 @@
-# React + Vite
+# XCOM-SHOP — Редизайн сайта
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Редизайн официального сайта компании **XCOM-SHOP**, специализирующейся на продаже электроники и техники. Проект направлен на модернизацию интерфейса: обновлённый визуальный стиль, улучшенная навигация и комфортное восприятие контента — без «режущих глаз» элементов старой версии.
 
-Currently, two official plugins are available:
+## Реализованные страницы
+- Главная страница (с блоками новостей, популярных каталогов и другим контентом)
+- Каталог товаров
+- Карточка товара
+- Вспомогательные разделы, интегрированные в главную
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Технологии
+- **React** + **JSX**
+- **Tailwind CSS** — для быстрой и адаптивной стилизации
+- **Reast** и **Reast lucide** — для управления состоянием и построения UI-компонентов
 
-## React Compiler
+## Цели редизайна
+- Современный и чистый визуальный стиль  
+- Удобная и интуитивная навигация  
+- Повышение читаемости и восприятия контента  
+- Единая структура и согласованность компонентов
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# Как запустить проект?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Проект использует **Tailwind CSS** для стилизации и **Vite** в качестве dev-сервера. Перед первым запуском необходимо установить зависимости и настроить Tailwind CSS.
+
+1. Установите зависимости:
+```sh
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+```
+2. Запустите локальный сервер для разработки:
+```sh
+npm run dev
+```
+3. Ваш сервер должен сработать и запустить его в локальном. (Пример: http://localhost:5173)
+
+---
+
+## Реализованные экраны и функции
+
+### Экраны
+- **Главная страница**  
+  — Визуально сбалансированная компоновка с блоками: новости, популярные категории, преимущества компании  
+  — Адаптивная сетка контента  
+  — Центральные призывы к действию (кнопки перехода в каталог и т.п.)
+
+- **Каталог товаров**  
+  — Группировка по категориям  
+  — Отображение товаров в виде карточек с изображением, названием и краткими характеристиками  
+  — Адаптивная сетка
+
+- **Карточка товара**  
+  — Детальное описание товара  
+  — Фотографии, цена, наличие  
+  — Кнопка «В корзину» / «Заказать»
+
+- **Новости**  
+  — Список новостных материалов с превью: изображение, заголовок, дата, краткое описание  
+  — Переход к полной версии новости
+
+- **Популярные каталоги**  
+  — Выделенные категории техники с акцентом на визуальную иконку и название  
+  — Быстрый переход в соответствующий раздел каталога
+
+### Ключевые функции
+- Полностью **адаптивный дизайн** (mobile-first подход)
+- Использование **иконок из Reast luсide**
+- **Модульная структура компонентов**: каждый блок — отдельный React-компонент
+- **Семантическая и читаемая верстка** с использованием Tailwind
+- **Оптимизированная визуальная иерархия** для снижения нагрузки
+
+---
+
+## Команда проекта
+
+- [Анашкина Татьяна](t.me/tany_fsr) - начинающий специалист по frontend разработке
+- [Шарганова Елизавета](t.me/tishkinoff) - начинающий специалист по frontend разработке и дизайну
+
+---
+
+Редизайн сделан по запросу.
